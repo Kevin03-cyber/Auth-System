@@ -5,6 +5,8 @@ import time
 import bcrypt
 import pyotp
 import qrcode
+import os
+import secrets
 from functools import wraps
 from flask import (Flask, render_template, request, redirect,
                    url_for, session)
@@ -12,7 +14,8 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
 app = Flask(__name__)
-app.secret_key = "change-this-to-a-long-random-string-123456"
+# read from an environment variable; random fallback for local use
+app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 DB = "users.db"
@@ -309,4 +312,4 @@ def logout():
 
 if __name__ == "__main__":
     init_db()
-    app.run(debug=True, port=5001)
+    app.run(debug=os.environ.get("FLASK_DEBUG") == "1", port=5001)
