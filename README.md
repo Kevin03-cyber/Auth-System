@@ -10,14 +10,12 @@ A from-scratch authentication system built with **Flask** and **SQLite**. It han
 
 | Enable 2FA (QR code) | 2FA code on login |
 |---|---|
-<img width="1905" height="963" alt="image" src="https://github.com/user-attachments/assets/74fefd11-6e74-4d7c-9765-b4ad05a54533" />
-
-<img width="1912" height="972" alt="image" src="https://github.com/user-attachments/assets/ccf03b94-9f81-4b4f-9ec5-cda849811635" />
+<img width="1905" height="963" alt="image" src="https://github.com/user-attachments/assets/74fefd11-6e74-4d7c-9765-b4ad05a54533" /><img width="1912" height="972" alt="image" src="https://github.com/user-attachments/assets/ccf03b94-9f81-4b4f-9ec5-cda849811635" />
 
 
 | Dashboard (2FA on) | Account lockout |
 |---|---|
-<img width="1912" height="982" alt="image" src="https://github.com/user-attachments/assets/c32bdaef-bb9e-417c-aaa0-1fe7f97c571d" />
+<img width="1912" height="982" alt="image" src="https://github.com/user-attachments/assets/c32bdaef-bb9e-417c-aaa0-1fe7f97c571d" /><img width="1910" height="980" alt="image" src="https://github.com/user-attachments/assets/f0b4c5f5-c036-42c5-9064-dc7dac9b17fd" />
 
 
 
